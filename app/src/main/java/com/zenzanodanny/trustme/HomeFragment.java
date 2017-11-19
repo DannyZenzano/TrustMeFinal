@@ -194,6 +194,7 @@ public class HomeFragment extends Fragment {
                 System.out.println("LOGDANNY:HOMEFragmento:OnDataChange");
 
 
+                
 
                 if (miSnapshot.exists()) {
 
