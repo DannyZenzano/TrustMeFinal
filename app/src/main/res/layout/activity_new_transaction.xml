@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context="com.zenzanodanny.trustme.NewTransactionActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/LayOutcabezera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="3.0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:background="@color/grey_300"
+            android:layout_weight="3.0"
+            android:gravity="center"
+            android:weightSum="2.0">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:theme="@style/ThemeOverlay.MySubtitleText"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/Titulo_Transaction"/>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/UploadImg"
+        style="@style/ThemeOverlay.FirebaseIcon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/blanco"
+        android:src="@drawable/subirimagen" />
+
+    <LinearLayout
+        android:id="@+id/LayOutform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="6.0">
+
+        <EditText
+            android:id="@+id/etxttitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:hint="@string/txt_hint_Titulo"
+            android:gravity="center"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etxtdescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:hint="@string/txt_hint_Descripcion"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="textMultiLine"/>
+
+        <EditText
+            android:id="@+id/etxceldestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:hint="@string/txt_hint_Cel_Destino"
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/LayOuttxt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="3.0">
+
+        <Switch
+            android:id="@+id/SwitchNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/txt_nuevo" />
+
+        <TextView
+            android:id="@+id/announce_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/title_bottom_margin"
+            android:text="@string/txt_estado_articulo"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/grey_300"
+        android:gravity="center_vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <Button
+                android:id="@+id/button_start_verification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:onClick="enviar_transaccion"
+                android:text="@string/txt_RegistrarTransaccion"
+                android:theme="@style/ThemeOverlay.MyDarkButton"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+

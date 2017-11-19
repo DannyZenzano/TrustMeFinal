@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">TrustMe</string>
+    <string name="txt_bienvenida">Bienvenido</string>
+    <string name="txt_prompt_msisdn">Ingresa tu Número de Celular, para que te enviemos un codigo de verificación</string>
+    <string name="txt_action_sign_in">Ingresa</string>
+    <string name="txt_aceptar_term">Aceptar terminos de uso</string>
+    <string name="txt_term_uso">Terminos de uso</string>
+    <string name="txt_desc_trustme_lockup">Logo Trustme</string>
+    <string name="txt_hint_phone_number">Nro Celular</string>
+    <string name="txt_hint_verification_code">Codigo de Verificacion</string>
+    <string name="txt_start_phone_auth">Verificar</string>
+    <string name="txt_verify_phone_auth">Enviar Codigo</string>
+
+
+    <string name="txt_toast_codigo_no_solicitado">DEBE SOLICITAR UN CODIGO PRIMERO</string>
+    <string name="txt_toast_auth_error">ERROR AL AUTENTIFICARSE</string>
+    <string name="txt_toast_time_out_code">Tiempo agotado. Solicite Nuevamente el Codigo</string>
+    <string name="txt_toast_registro">Falta poco... Debemos terminar el registro</string>
+    <string name="txt_toast_logueado">Bienvenido!!!</string>
+    <string name="txt_toast_aut_correctamente">INGRESO CORRECTO</string>
+    <string name="txt_toast_aut_error">ERROR DE INGRESO</string>
+
+
+    <string name="signed_out">SignedOut</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="sign_out">SignOut</string>
+
+
+    <string name="label_google_sign_in">Firebase+GoogleSignIn</string>
+    <string name="desc_google_sign_in">UseaGoogleSignIncredentialtoauthenticatewithFirebase.</string>
+
+    <string name="label_facebook_login">Firebase+FacebookLogin</string>
+    <string name="desc_facebook_login">UseaFacebookLogincredentialtoauthenticatewithFirebase.</string>
+
+    <string name="label_twitter_login">Firebase+TwitterLogin</string>
+    <string name="desc_twitter_login">UseaTwitterLogincredentialtoauthenticatewithFirebase.</string>
+
+    <string name="label_emailpassword">Email/PasswordAuthentication</string>
+    <string name="desc_emailpassword">UseanemailandpasswordtoauthenticatewithFirebase.</string>
+
+    <string name="label_phone_auth">PhoneNumberAuthentication</string>
+    <string name="desc_phone_auth">UseaphonenumbertoauthenticatewithFirebase.</string>
+
+    <string name="label_anonymous_auth">AnonymousAuthentication</string>
+    <string name="desc_anonymous_auth">SigninanonymouslyandthenlaterupgradetoafullFirebaseAuthuser.</string>
+
+    <string name="label_custom_auth">CustomAuthentication</string>
+    <string name="desc_custom_auth">UseacustomtokensignedbyyourownservertoauthenticatewithFirebase.</string>
+
+    <string name="label_firebase_ui">FirebaseUIAuth</string>
+    <string name="desc_firebase_ui">UsetheFirebaseUI-AndroidlibrarytoauthenticatewithFirebase.</string>
+
+    <string name="hint_user_id">UserID</string>
+    <string name="get_custom_token">GetToken</string>
+    <string name="sign_in">SignIn</string>
+    <string name="create_account">CreateAccount</string>
+
+    <string name="verify_email">VerifyEmail</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+    <string name="custom_token">CustomToken</string>
+    <string name="signed_in">SignedIn</string>
+
+    <string name="token_null">Token:null</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="desc_firebase_lockup">Firebaselogoandname</string>
+    <string name="auth_failed">Authenticationfailed</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+
+    <string name="hint_phone_number">PhoneNumber</string>
+    <string name="hint_verification_code">VerificationCode</string>
+    <string name="status_code_sent">CodeSent</string>
+    <string name="status_verification_failed">Verificationfailed</string>
+    <string name="status_verification_succeeded">Verificationsucceeded</string>
+    <string name="status_sign_in_failed">Sign-infailed</string>
+    <string name="instant_validation">(instantvalidation)</string>
+
+    <string name="firebase_status_fmt">FirebaseUser:%s</string>
+    <string name="firebase_user_management">FirebaseUserManagement</string>
+
+    <string name="google_status_fmt">GoogleUser:%s</string>
+    <string name="google_title_text">GoogleSignIn</string>
+
+    <string name="facebook_status_fmt">FacebookUser:%s</string>
+    <string name="facebook_title_text">FacebookLogin</string>
+
+    <string name="emailpassword_status_fmt">EmailUser:%1$s(verified:%2$b)</string>
+    <string name="emailpassword_title_text">EmailandPassword</string>
+
+    <string name="phone_title_text">PhoneNumber</string>
+
+    <string name="twitter_status_fmt">TwitterUser:%s</string>
+    <string name="twitter_title_text">TwitterLogin</string>
+
+    <string name="firebaseui_status_fmt">FirebaseUser:%s</string>
+    <string name="firebaseui_title_text">FirebaseUIAuth</string>
+
+    <string name="id_fmt">UserID:%s</string>
+    <string name="email_fmt">Email:%s</string>
+
+
+    <string name="phone_disclaimer">WhenyouclickthebuttontoverifyyourphonenumberanSMSwillbesenttoyou,ratesmaybeappliedtoyou</string>
+    <string name="now_logged_in">NowyouareloggedIn</string>
+    <string name="signed_success">signedinsuccesfully</string>
+    <string name="sign_credential_fail">failedtosigninwithcredential</string>
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="txt_hint_nombre">NOMBRE</string>
+    <string name="txt_hint_apellido">APELLIDO</string>
+    <string name="txt_continua_registro">Continuamos con el Registro Conectando...</string>
+    <string name="txt_continua_registro2">Continuamos con el Registro del telefono:</string>
+    <string name="txt_editarImg">EditarImagen</string>
+    <string name="txt_RegistrarStep2">REGISTRAR</string>
+    <string name="txt_campo_obligatorio">ESTE CAMPO ES OBLIGATORIO</string>
+    <string name="txt_toast_profile_img_uplod_ok">Imagen subida Exitosamente</string>
+    <string name="txt_Dialog_title_imgprof">Subiendo Imagen</string>
+    <string name="txt_Dialog_desc_imgprof">Espere por favor</string>
+    <string name="txt_Dialog_title_downimg">Configurando...</string>
+    <string name="txt_Dialog_desc_downimg">Espere un momento por favor</string>
+    <string name="title_nav_vender">CREAR VENTA</string>
+    <string name="title_nav_comprar">CALIFICAR COMPRA</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_radio_Articulo">Es un Articulo</string>
+    <string name="txt_radio_Servicio">Es un Servicio</string>
+    <string name="Titulo_Transaction">NUEVA TRANSACCION</string>
+    <string name="txt_hint_Titulo">TITULO</string>
+    <string name="txt_hint_Descripcion">Ingresa la descripción del producto</string>
+    <string name="txt_estado_articulo">Al presionar se enviara una notificación para que el comprador te pueda calificar</string>
+    <string name="txt_nuevo">EL ARTICULO ES NUEVO</string>
+    <string name="txt_hint_Cel_Destino">Nro de Celular del Comprador</string>
+    <string name="txt_RegistrarTransaccion">Enviar</string>
+    <string name="txt_mal_formato_celular">Nro mal escrito</string>
+    <string name="dialog_title1">TU CLIENTE AUN NO USA TRUSTME</string>
+    <string name="dialog_message1">La transaccion fue creada exitosamente, pero detectamos que tu cliente aun no usa TRUSTME. Tu cliente solo debe instalarse la aplicacion y tu transaccion estara disponible para ser calificada. DESEAS ENVIAR UN SMS CON LA INVITACION?</string>
+    <string name="ok">SI</string>
+    <string name="no">NO</string>
+    <string name="dialog_title2">No se envio Aviso</string>
+    <string name="dialog_message2">No se envio aviso a tu cliente. Tu deberas notificarle que para calificarte solo debe instalar la app TRUSTME</string>
+    <string name="entendi">ENTENDI</string>
+    <string name="dialog_title3">Transacción Exitosa</string>
+    <string name="dialog_message3">Tu venta ya esta disponible para que tu cliente te califique</string>
+    <string name="txt_estado">ESTADO</string>
+    <string name="txt_descripcion">DESCRIPCION</string>
+    <string name="txt_vendedor">VENDEDOR</string>
+    <string name="txt_promedio_vendedor">PROMEDIO VENDEDOR</string>
+    <string name="txt_promedio_Defaulf">Aun no tiene calificaciones</string>
+    <string name="txt_calificar">CALIFICAR PRODUCTO</string>
+    <string name="txt_obteniendo_datos">Obteniendo Datos...</string>
+    <string name="titulo">TITULO</string>
+    <string name="txt_Titulo_Articulo_Calif">CALIFICACION DEL ARTICULO</string>
+    <string name="txt_Titulo_Comunicacion_Calif">CALIFICA LA COMUNICACION</string>
+    <string name="txt_Titulo_Puntualidad_Calif">CALIFICA LA PUNTUALIDAD</string>
+    <string name="txt_guardar_Rating">Guardar Calificacion</string>
+    <string name="MiReputacion">MI REPUTACION</string>
+    <string name="NoCalificaciones">Aun No Tienes Calificaciones</string>
+    <string name="BuscaUnUsuario">BUSCA UN USUARIO</string>
+    <string name="buscar_usuario">Buscar usuario</string>
+    <string name="title_nav_search">BUSCAR</string>
+    <string name="usuarioNoEncontrado">Usuario no encontrado</string>
+    <string name="Buscando">BUSCANDO</string>
+    <string name="Notificaciones">NOTIFICACIONES</string>
+    <string name="TransaccionYaCalificada">YA CALIFICADA</string>
+    <string name="TransaccionNoCalificada">AUN NO CALIFICADA</string>
+    <string name="CalificacionesPendientes">Nro de Calificaciones Pendientes</string>
+    <string name="Cero">0</string>
+
+
+</resources>

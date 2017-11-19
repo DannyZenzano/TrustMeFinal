@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TrustMe</string>
+    <string name="txt_bienvenida">WELCOME</string>
+    <string name="txt_prompt_msisdn">Celular Number</string>
+    <string name="txt_action_sign_in">Sign in</string>
+    <string name="txt_aceptar_term">I agree to terms</string>
+    <string name="txt_term_uso">Terms</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context="com.zenzanodanny.trustme.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/LayOutimg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ImageProfile"
+                style="@style/ThemeOverlay.FirebaseIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blanco"
+                android:src="@drawable/editprofile" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayOutform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="2.0">
+
+        <EditText
+            android:id="@+id/etxtnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:hint="@string/txt_hint_nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etxtapellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:hint="@string/txt_hint_apellido"
+            android:inputType="textPersonName"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayOuttxt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="2.0">
+
+        <TextView
+            android:id="@+id/announce_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/title_bottom_margin"
+            android:text="@string/txt_continua_registro"
+            android:layout_weight="1.0"
+            android:theme="@style/ThemeOverlay.MySubtitleText" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/grey_300"
+        android:gravity="center_vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2.0">
+
+                <Button
+                    android:id="@+id/button_start_verification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:elevation="1dp"
+                    android:gravity="center"
+                    android:onClick="registrar_usuario"
+                    android:text="@string/txt_RegistrarStep2"
+                    android:enabled="false"
+                    android:theme="@style/ThemeOverlay.MyDisabledDarkButton"/>
+
+
+            </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zenzanodanny.trustme.RatingActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/CabeceraRatingLayOut"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtTituloTransaccion"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:theme="@style/ThemeOverlay.MySubtitleText"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/txtTituloTransaccion2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/Atention"
+            android:gravity="top|center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/CuerpoRatingLayOut"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtSubArticulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="@string/txt_Titulo_Articulo_Calif"
+            android:inputType="textMultiLine"/>
+        <RatingBar
+            android:id="@+id/ratingBarArticulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="5"
+            android:stepSize="0.5"
+            android:numStars="5"/>
+        <TextView
+            android:id="@+id/txtSubComunicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="@string/txt_Titulo_Comunicacion_Calif"
+            android:inputType="textMultiLine"/>
+        <RatingBar
+            android:id="@+id/ratingBarComunicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="5"
+            android:stepSize="0.5"
+            android:numStars="5"/>
+        <TextView
+            android:id="@+id/txtSubPuntualidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="@string/txt_Titulo_Puntualidad_Calif"
+            android:inputType="textMultiLine"/>
+        <RatingBar
+            android:id="@+id/ratingBarPuntualidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="5"
+            android:stepSize="0.5"
+            android:numStars="5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/FooterRatingLayOut"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_Save_Rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:onClick="GuardarRating"
+            android:text="@string/txt_guardar_Rating"
+            android:theme="@style/ThemeOverlay.MyDarkButton"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

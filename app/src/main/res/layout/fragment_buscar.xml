@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.zenzanodanny.trustme.BuscarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/OtraRepLayOut"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/TitBuscadorLayOut"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtTituloBuscador"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:theme="@style/ThemeOverlay.MySubtitleText"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/buscar_usuario"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/CampoBuscadorLayOut"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/grey_300"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/etxtBuscador"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.0"
+                android:hint="@string/txt_hint_phone_number"
+                android:inputType="phone" />
+
+            <ImageButton
+                android:id="@+id/imageSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                app:srcCompat="@drawable/ic_search_vector" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ResBuscadorLayOut"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/TitBuscRepLayOut"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtNombreEncontrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:theme="@style/ThemeOverlay.MySubtitleText"
+                    android:background="@color/grey_100"/>
+                <TextView
+                    android:id="@+id/txtNombreEncontrado2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/Atention"
+
+                    android:background="@color/grey_100"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ArticuloMiRepLayOut"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSubArticulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:text="@string/txt_Titulo_Articulo_Calif"
+                    android:inputType="textMultiLine"/>
+
+                <RatingBar
+                    android:id="@+id/UserRatingBarArticulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="0"
+                    android:stepSize="0.5"
+                    android:numStars="5"
+                    android:isIndicator="true"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ComunicacionMiRepLayOut"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtSubComunicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:text="@string/txt_Titulo_Comunicacion_Calif"
+                    android:inputType="textMultiLine"/>
+
+                <RatingBar
+                    android:id="@+id/UserRatingBarComunicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="0"
+                    android:stepSize="0.5"
+                    android:numStars="5"
+                    android:isIndicator="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/PuntualidadMiRepLayOut"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtSubPuntualidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:text="@string/txt_Titulo_Puntualidad_Calif"
+                    android:inputType="textMultiLine"/>
+
+                <RatingBar
+                    android:id="@+id/UserRatingBarPuntualidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="0"
+                    android:stepSize="0.5"
+                    android:numStars="5"
+                    android:isIndicator="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ResBuscadorPieLayOut"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+        </LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>
