@@ -50,6 +50,8 @@ public class NavActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nav);
 
+
+
         System.out.println("LOGDANNY:INGRESOMETODO"+" INGRESO A NavActivity");
         //IMPRIMO MIS VARIABLES DE SESSION
         TelephoneUtils mytelephoneutilstest=new TelephoneUtils(NavActivity.this);
@@ -60,9 +62,13 @@ public class NavActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        FragmentManager myfragmentmanager =getSupportFragmentManager();
-        FragmentTransaction transccion = myfragmentmanager.beginTransaction();
-        transccion.replace(R.id.content,new HomeFragment()).commit();
+
+            FragmentManager myfragmentmanager =getSupportFragmentManager();
+            FragmentTransaction transccion = myfragmentmanager.beginTransaction();
+            transccion.replace(R.id.content,new HomeFragment()).commit();
+
+
+
 
 
 

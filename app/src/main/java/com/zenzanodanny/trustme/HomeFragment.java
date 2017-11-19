@@ -63,6 +63,7 @@ public class HomeFragment extends Fragment {
     private RatingBar MiRBarComunicacion;
     private RatingBar MiRBarPuntualidad;
     private TextView MiTituloRep;
+    private TextView NroNotif;
     private Button BotonIrACalificar;
 
 
@@ -113,7 +114,7 @@ public class HomeFragment extends Fragment {
         MiRBarPuntualidad = (RatingBar) Mivista.findViewById(R.id.MiRatingBarPuntualidad);
         MiTituloRep = (TextView) Mivista.findViewById(R.id.txtTituloMiRep);
         BotonIrACalificar=(Button) Mivista.findViewById(R.id.IrACalificar);
-
+        NroNotif=(TextView) Mivista.findViewById(R.id.NroNotif);
 
         SessionManager mysession1;
         mysession1= new SessionManager(getContext());
@@ -194,7 +195,7 @@ public class HomeFragment extends Fragment {
                 System.out.println("LOGDANNY:HOMEFragmento:OnDataChange");
 
 
-                
+
 
                 if (miSnapshot.exists()) {
 
@@ -202,9 +203,20 @@ public class HomeFragment extends Fragment {
                     for (DataSnapshot snapshothijo:miSnapshot.getChildren() ) {
                         transacciones nuevatransaccion=snapshothijo.getValue(transacciones.class);
                         System.out.println("LOGDANNY:HomeFragmento:OnCREATEVIEW:onDataChange:Snapshoot nuevatransaccion:"+nuevatransaccion.toString());
-                        if(nuevatransaccion.getTr_estado_transaccion().compareTo("pendiente")==0){
-                            CantidadPendiente++;
+                        String miestado=nuevatransaccion.getTr_estado_transaccion();
+                        System.out.println("LOGDANNY:HomeFragmento:miestado"+miestado);
+                        if(miestado.compareTo("pendiente")==0){
+                            CantidadPendiente=CantidadPendiente+1;
+                            System.out.println("LOGDANNY:HomeFragmento:ES PENDIENTE:CantidadPendiente:"+CantidadPendiente);
+                        }else{
+                            System.out.println("LOGDANNY:HomeFragmento:NO ES PENDIENTE");
                         }
+                    }
+                    System.out.println("LOGDANNY:HOMEFragmento:CantidadPendiente"+CantidadPendiente);
+                    NroNotif.setText(CantidadPendiente+"");
+                    if(CantidadPendiente>0){
+                        BotonIrACalificar.setText(getString(R.string.txtBtnIrCalif));
+                        BotonIrACalificar.setEnabled(true);
                     }
                 } else {
                     //El usuario no ESTA REGISTRADO. Volvemos a un principio
@@ -219,6 +231,10 @@ public class HomeFragment extends Fragment {
 
         });
         ////////////////////////
+
+
+
+
 
 
 

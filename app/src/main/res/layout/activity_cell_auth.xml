@@ -20,14 +20,16 @@
             android:id="@+id/icon"
             style="@style/ThemeOverlay.FirebaseIcon"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:contentDescription="@string/txt_desc_trustme_lockup"
-            android:src="@drawable/firebase_lockup_400" />
+            android:src="@drawable/trustme" />
 
         <TextView
             android:id="@+id/title_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
             android:layout_marginBottom="@dimen/title_bottom_margin"
             android:text="@string/txt_prompt_msisdn"
             android:theme="@style/ThemeOverlay.MyTitleText" />

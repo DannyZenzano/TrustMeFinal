@@ -53,6 +53,7 @@ public class VerCompraActivity extends AppCompatActivity {
         //Obtengo mis datos
         KeyTransaction=getIntent().getExtras().getString("KeyTransaction");
         System.out.println("LOGDANNY:VERCOMPRA:KeyTransaction:"+KeyTransaction);
+
         Titulo=getIntent().getExtras().getString("Titulo");
         IdVendedor=getIntent().getExtras().getString("IdVendedor");
         IdComprador=getIntent().getExtras().getString("IdComprador");
@@ -60,6 +61,7 @@ public class VerCompraActivity extends AppCompatActivity {
         Descripcion=getIntent().getExtras().getString("Descripcion");
         Estado_conservacion=getIntent().getExtras().getString("Estado_conservacion");
         fotografia=getIntent().getExtras().getString("fotografia");
+
         //Instancio mis campos
         TVViewTitulo = (TextView) findViewById(R.id.txtTitulo);
         TVDescripcion = (TextView) findViewById(R.id.txtdescripcion);
@@ -124,9 +126,21 @@ public class VerCompraActivity extends AppCompatActivity {
         intent.putExtra("Titulo",Titulo);
         intent.putExtra("IdVendedor",IdVendedor);
         intent.putExtra("IdComprador",IdComprador);
+        intent.putExtra("Estado_transaccion",Estado_transaccion);
+        intent.putExtra("Descripcion",Descripcion);
+        intent.putExtra("Estado_conservacion",Estado_conservacion);
+        intent.putExtra("fotografia",fotografia);
+
+
         startActivity(intent);
         finish();
     }
 
 
+    public void IrACompras(View view) {
+        Intent intent = new Intent(VerCompraActivity.this, NavActivity.class);
+        startActivity(intent);
+        finish();
+
+    }
 }

@@ -116,7 +116,7 @@
             android:onClick="VerVendedor"
             android:textStyle="bold"/>
     </LinearLayout>
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -129,9 +129,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:weightSum="2.0">
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/button_atras"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:onClick="IrACompras"
+                android:text="@string/atras"
+                android:theme="@style/ThemeOverlay.MyDarkButton"/>
             <Button
                 android:id="@+id/button_raiting"
                 android:layout_width="0dp"
@@ -143,12 +152,11 @@
                 android:text="@string/txt_calificar"
                 android:theme="@style/ThemeOverlay.MyDarkButton"/>
 
-
         </LinearLayout>
 
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>
 

@@ -173,8 +173,8 @@
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="36sp"
+                android:enabled="false"
                 android:textColor="@color/azul"
-                android:text="Calificar>"
                 android:background="@color/grey_300"/>
 
         </LinearLayout>

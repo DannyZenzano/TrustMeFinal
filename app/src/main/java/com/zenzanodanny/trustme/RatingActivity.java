@@ -23,6 +23,11 @@ public class RatingActivity extends AppCompatActivity {
     String Titulo;
     String IdVendedor;
     String IdComprador;
+    String Estado_transaccion;
+    String Descripcion;
+    String Estado_conservacion;
+    String fotografia;
+
 
     private RatingBar RBarArticulo;
     private RatingBar RBarComunicacion;
@@ -50,6 +55,12 @@ public class RatingActivity extends AppCompatActivity {
         Titulo=getIntent().getExtras().getString("Titulo");
         IdVendedor=getIntent().getExtras().getString("IdVendedor");
         IdComprador=getIntent().getExtras().getString("IdComprador");
+
+        Estado_transaccion=getIntent().getExtras().getString("Estado_transaccion");
+        Descripcion=getIntent().getExtras().getString("Descripcion");
+        Estado_conservacion=getIntent().getExtras().getString("Estado_conservacion");
+        fotografia=getIntent().getExtras().getString("fotografia");
+
         System.out.println("LOGDANNY:RATINGACTIVITY:IdComprador:"+IdComprador);
         System.out.println("LOGDANNY:RATINGACTIVITY:IdVendedor:"+IdVendedor);
         System.out.println("LOGDANNY:RATINGACTIVITY:Titulo:"+Titulo);
@@ -124,5 +135,21 @@ public class RatingActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
 
+    }
+
+    public void cancelar(View view) {
+        Intent intent = new Intent(RatingActivity.this, VerCompraActivity.class);
+
+
+        intent.putExtra("KeyTransaction",KeyTransaction);
+        intent.putExtra("Titulo",Titulo);
+        intent.putExtra("IdVendedor",IdVendedor);
+        intent.putExtra("IdComprador",IdComprador);
+        intent.putExtra("Estado_transaccion",Estado_transaccion);
+        intent.putExtra("Descripcion",Descripcion);
+        intent.putExtra("Estado_conservacion",Estado_conservacion);
+        intent.putExtra("fotografia",fotografia);
+        startActivity(intent);
+        finish();
     }
 }

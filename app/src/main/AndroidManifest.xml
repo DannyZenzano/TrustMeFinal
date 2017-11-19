@@ -27,8 +27,7 @@
         <activity android:name=".AccountActivity" />
         <activity android:name=".PhoneAuthActivity" />
         <activity
-            android:name=".NavActivity"
-            android:label="@string/title_activity_nav" />
+            android:name=".NavActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".NewTransactionActivity" />
         <activity android:name=".RatingActivity" />

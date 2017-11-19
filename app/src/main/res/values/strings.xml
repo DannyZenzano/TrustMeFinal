@@ -169,6 +169,9 @@
     <string name="TransaccionNoCalificada">AUN NO CALIFICADA</string>
     <string name="CalificacionesPendientes">Nro de Calificaciones Pendientes</string>
     <string name="Cero">0</string>
+    <string name="atras">ATRAS</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="txtBtnIrCalif"><![CDATA[Calificar>]]></string>
 
 
 </resources>
