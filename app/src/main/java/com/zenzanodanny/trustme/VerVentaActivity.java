@@ -133,6 +133,7 @@ public class VerVentaActivity extends AppCompatActivity {
         intent.putExtra("Descripcion",Descripcion);
         intent.putExtra("Estado_conservacion",Estado_conservacion);
         intent.putExtra("fotografia",fotografia);
+        
 
 
         startActivity(intent);
