@@ -175,6 +175,7 @@
     <string name="atras">back</string>
     <string name="cancelar">CANCEL</string>
     <string name="txtBtnIrCalif"><![CDATA[Rate>]]></string>
+    <string name="txt_calificar_deshabilitado">DIDNT RATING YET</string>
 
 
 </resources>

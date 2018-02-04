@@ -106,7 +106,7 @@
                     android:onClick="registrar_usuario"
                     android:text="@string/txt_RegistrarStep2"
                     android:enabled="false"
-                    android:theme="@style/ThemeOverlay.MyDisabledDarkButton"/>
+                android:theme="@style/ThemeOverlay.MyDisabledDarkButton"/>
 
 
             </LinearLayout>

@@ -172,6 +172,7 @@
     <string name="atras">ATRAS</string>
     <string name="cancelar">CANCELAR</string>
     <string name="txtBtnIrCalif"><![CDATA[Calificar>]]></string>
+    <string name="txt_calificar_deshabilitado">No Calificado</string>
 
 
 </resources>

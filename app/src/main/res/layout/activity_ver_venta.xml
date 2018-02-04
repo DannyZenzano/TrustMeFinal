@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100"
+        android:orientation="vertical"
+        android:weightSum="8"
+        tools:context="com.zenzanodanny.trustme.VerVentaActivity">
+
+
+        <LinearLayout
+            android:id="@+id/LayOutcabezera"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="3.0">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:background="@color/grey_300"
+                android:layout_weight="3.0"
+                android:gravity="center"
+                android:weightSum="2.0">
+                <TextView
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:theme="@style/ThemeOverlay.MySubtitleText"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/titulo"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ImgComp"
+            style="@style/ThemeOverlay.FirebaseIcon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:background="@color/blanco"
+            android:src="@drawable/no_disponible" />
+
+        <LinearLayout
+            android:id="@+id/LayOutform"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="6.0">
+
+            //--
+            //--
+
+            <TextView
+                android:id="@+id/txtTitulodescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="@string/txt_descripcion"
+                android:inputType="textMultiLine"/>
+
+            <TextView
+                android:id="@+id/txtdescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.0"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/LayOuttxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="3.0">
+
+
+            <TextView
+                android:id="@+id/announce_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/txt_vendedor"
+                android:layout_weight="1.0"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txt_Nombre_Vendedor"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:theme="@style/ThemeOverlay.MySubtitleText"
+                android:layout_weight="2.0"
+                android:gravity="center"
+                android:text="@string/txt_obteniendo_datos"
+                android:onClick="VerVendedor"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/grey_300"
+            android:gravity="center_vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_atras"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:elevation="1dp"
+                    android:gravity="center"
+                    android:onClick="IrAVentas"
+                    android:text="@string/atras"
+                    android:theme="@style/ThemeOverlay.MyDarkButton"/>
+                <Button
+                    android:id="@+id/button_raiting_ver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:elevation="1dp"
+                    android:gravity="center"
+                    android:onClick="enviar_a_ver_calificacion"
+                    android:text="@string/txt_calificar_deshabilitado"
+                    android:enabled="false"
+                    android:theme="@style/ThemeOverlay.MyDisabledDarkButton"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+

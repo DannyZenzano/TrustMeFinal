@@ -108,7 +108,21 @@ public class VenderFragment extends Fragment {
                 int posicionclick=recyclerTransactions.getChildAdapterPosition(v);
                 System.out.println("LOGDANNY:VenderFragmento:ONCLIC:"+ListaTransacciones.get(posicionclick).getTr_titulo());
                 System.out.println("LOGDANNY:VenderFragmento:ONCLICKEY:"+ListaKeyTransacciones.get(posicionclick));
-
+                //
+                //IR A VER VENTAS, LE ENVIO EL ID DE LA VENTA Y EL OBJETO TRANSACCION
+                //Vuelvo a pagina de registro o logueo
+                Intent intent = new Intent(getActivity(), VerVentaActivity.class);
+                intent.putExtra("parametro", "string");
+                intent.putExtra("KeyTransaction",ListaKeyTransacciones.get(posicionclick));
+                intent.putExtra("Titulo",ListaTransacciones.get(posicionclick).getTr_titulo());
+                intent.putExtra("IdVendedor",ListaTransacciones.get(posicionclick).getTr_id_vendedor());
+                intent.putExtra("IdComprador",ListaTransacciones.get(posicionclick).getTr_id_comprador());
+                intent.putExtra("Estado_transaccion",ListaTransacciones.get(posicionclick).getTr_estado_transaccion());
+                intent.putExtra("Descripcion",ListaTransacciones.get(posicionclick).getTr_descripcion());
+                intent.putExtra("Estado_conservacion",ListaTransacciones.get(posicionclick).getTr_estado_conservacion());
+                intent.putExtra("fotografia",ListaTransacciones.get(posicionclick).getTr_fotografia());
+                getActivity().startActivity(intent);
+                getActivity().finish();
 
             }
         });

@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity" />
-        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".TestActivity" />
         <activity android:name=".CellAuthActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,13 +26,14 @@
         </activity>
         <activity android:name=".AccountActivity" />
         <activity android:name=".PhoneAuthActivity" />
-        <activity
-            android:name=".NavActivity" />
+        <activity android:name=".NavActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".NewTransactionActivity" />
         <activity android:name=".RatingActivity" />
         <activity android:name=".VerCompraActivity" />
-        <activity android:name=".test2Activity"></activity>
+        <activity android:name=".test2Activity" />
+        <activity android:name=".VerVentaActivity" />
+        <activity android:name=".RatingActivityVer"></activity>
     </application>
 
 </manifest>
